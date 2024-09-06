@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#"><span>He</span>lium</a>
+            </div>
+
+            
+            <ul class="menu" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#faq-section">FAQ</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
+        
+    </nav>
+
+    <section class="header-bar">
+        <div class="max-width">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <div class="links">
+                <a href="#">Contact Us</a>
+                <a href="#">Join Us</a>
+            </div>
+            <a href="#" class="cta-button">Login</a>
+        </div>
+    </section>
+
+     
+
+     <!------------------------- Home section starts ------------------------------------>
+
+     <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Empowering Your Business with Cutting Edge Technology.</div>
+                <div class="text-2">Innovative IT Solutions for a Digital World.</div>
+                <a href="" class="hero-btn">Learn More.</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!---------------------------- About us Section Starts -------------------------------->
+
+    <section class="about-us" id="about-us">
+        <div class="max-width">
+            <h2 class="title">About Us</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/About-us.png" alt="About Us Image">
+                </div>
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis consequat dolor at metus ullamcorper, et viverra nisl varius. Proin lacinia nisl ut ultricies posuere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- --------------------------------------FAQ Section --------------------------------->
+
+     <section class="faq-section" id="faq">
+        <div class="max-width">
+            <div class="faq-content">
+                <div class="faq-left">
+                    <h1>FREQUENTLY ASKED QUESTIONS</h1>
+                </div>
+                <div class="faq-right">
+                    <div class="faq-item">
+                        <button class="faq-question">What services does your IT company provide?</button>
+                        <div class="faq-answer">
+                            <p> We offer a range of IT services including software development, network management, cloud solutions, cybersecurity, and IT consulting.</p>
+                        </div>
+                    </div>
+    
+                    <div class="faq-item">
+                        <button class="faq-question">How do you ensure the security of our data?</button>
+                        <div class="faq-answer">
+                            <p>We implement advanced security protocols, including encryption, regular audits, and multi-factor authentication, to protect your data from unauthorized access.</p>
+                        </div>
+                    </div>
+    
+                    <div class="faq-item">
+                        <button class="faq-question">What is your approach to software development?</button>
+                        <div class="faq-answer">
+                            <p>We follow an agile methodology, focusing on iterative development, continuous feedback, and collaboration with clients to ensure the final product meets their needs.</p>
+                        </div>
+                    </div>
+    
+                    <div class="faq-item">
+                        <button class="faq-question">Can you help migrate our data to the cloud?</button>
+                        <div class="faq-answer">
+                            <p>Yes, we provide comprehensive cloud migration services, including planning, execution, and post-migration support to ensure a smooth transition.</p>
+                        </div>
+                    </div>
+    
+                    <div class="faq-item">
+                        <button class="faq-question">How do you handle IT project management?</button>
+                        <div class="faq-answer">
+                            <p>Our project management team uses industry-standard tools and practices to ensure projects are delivered on time and within budget, with clear communication throughout.</p>
+                        </div>
+                    </div>
+    
+                    <div class="faq-item">
+                        <button class="faq-question">What industries do you specialize in?</button>
+                        <div class="faq-answer">
+                            <p>We specialize in various industries including healthcare, finance, retail, education, and manufacturing, providing tailored IT solutions for each sector.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!----------------- Contact us section ----------------------->
+
+    <section class="contact-us" id="contact-us">
+        <div class="max-width">
+            <h2 class="title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-fields">
+                            <input id="name" type="text" name="name" placeholder="Your Name" required>
+                            <input id="email" type="email" name="email" placeholder="Your Email" required>
+                            <input id="phone" type="text" name="phone" placeholder="Your Phone Number" required>
+                            <select name="subject" required>
+                                <option value="" disabled selected>Select Subject</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Support">Support</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.</p>
+                    <p>Phone: +91 784465672</p>
+                    <p>Email: helium@gmail.com</p>
+                    <p>Address: Street, City, Country</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------------- Footer section starts ------------------------------------->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <p>Phone: +91 784465672</p>
+                <p>Email: helium@gmail.com</p>
+                <p>Address:  Street, City, Country</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 YourCompany. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
